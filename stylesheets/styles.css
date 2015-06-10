@@ -1,0 +1,273 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	background: #EEE;
+	font-family: arial;
+	font-size: 12px;
+}
+label{
+	font-weight: bold;
+}
+button{
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+.notify-error, .notify-success{
+	margin: 0 auto 20px;
+}
+.notify-error{
+	background: #F00;
+	padding: 0 10px;
+	color: #FFF;
+	font: bold 12px arial;
+	border-radius: 5px;
+	line-height: 30px;
+}
+.notify-success{
+	background: #0F0;
+	padding: 0 10px;
+	color: #FFF;
+	font: bold 12px arial;
+	border-radius: 5px;
+	line-height: 30px;
+}
+.notify-fadeout{
+	height: 0;
+}
+#top-div{
+	background: #333;
+	height: 40px;
+	padding: 0 20px;
+	box-shadow: 0px 8px 10px -6px #777;
+}
+#login-form{
+	font: bold 12px arial;
+	color: #FEA;
+}
+#login-form label{
+	margin-right: 5px;
+}
+#login-form .field-div{
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#login-form input[type=text], #login-form input[type=password]{
+	border: 0;
+	height: 25px;
+	box-shadow: inset -8px -8px 6px -6px #777;
+	border-radius: 2px;
+}
+#login-form input[type=submit]{
+	border: 0;
+	background: #FEA;
+	color: #333;
+	height: 25px;
+	padding: 0 10px;
+	text-shadow: 1px 1px 3px #777;
+	font-weight: bold;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#login-form input[type=submit]:hover{
+	background: #ED9;
+}
+#admin-nav{
+
+}
+#admin-nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#admin-nav ul li{
+	display: inline-block;
+	color: #DDD;
+	font: normal 12px arial;
+}
+#admin-nav ul li.c-user{
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+}
+#admin-nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #FEA;
+	font: bold 12px arial;
+	padding: 0 10px 0;
+	line-height: 40px;
+}
+#admin-nav ul li a:hover{
+	background: #555;
+}
+#main-wrapper{
+	padding: 20px 20px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.content-wrapper{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #FFF;
+	box-shadow: 0px 8px 20px 1px #888;
+	border-radius: 10px;
+}
+.content-wrapper:last-child{
+	margin-bottom: 0;
+}
+h2{
+	margin: 0;
+	padding: 0;
+	font: bold 22px arial;
+	line-height: 30px;
+	color: #676767;
+	text-shadow: 1px 1px  3px #777;
+}
+h2.button{
+	float: left;
+}
+button.add-bill{
+	float: right;
+	border: 0;
+	height: 30px;
+	background: #146;
+	color: #DDD;
+	border-radius: 3px;
+	text-shadow: 0px -1px #024;
+	padding: 0 20px;
+	border-bottom: 1px solid #024;
+}
+button.add-bill:hover{
+	background: #368;
+}
+#overview{
+	margin-top: 10px;
+	border-top: 3px solid #DDD;
+	border-bottom: 3px solid #DDD;
+	border-radius: 3px;
+}
+#overview ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#overview ul li{
+	border-bottom: 1px dashed #CCC;
+	padding: 10px 0;
+	text-shadow: 1px 1px 3px #AAA;
+}
+#overview ul li:last-child{
+	border-bottom: 0;
+}
+#overview ul li .key{
+	float: left;
+}
+#overview ul li .value{
+	float: right;
+}
+#unpaid-bills{
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+#unpaid-bills tr.header{
+	background: #DDD;
+}
+#unpaid-bills tr.bill td{
+	padding: 10px 0;
+	border-bottom: 1px dashed #CCC;
+}
+#unpaid-bills tr.bill:last-child td{
+	border-bottom: 0;
+}
+#unpaid-bills th{
+	padding: 10px 0;
+}
+#unpaid-bills .name{
+	width: 45%;
+}
+#unpaid-bills .amount{
+	width: 10%;
+	text-align: center;
+}
+#unpaid-bills .due-date{
+	width: 20%;
+	text-align: center;
+}
+#unpaid-bills .auto-pay{
+	width: 10%;
+	text-align: center;
+}
+#unpaid-bills .options{
+	width: 15%;
+	text-align: center;
+}
+#unpaid-bills tr.total td{
+	padding: 10px 5px;
+	background: #000;
+	color: #FFF;
+	font-weight: bold;
+}
+#accounts{
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 10px;
+	border-bottom: 5px solid #DDD;
+}
+#accounts tr.header{
+	background: #DDD;
+}
+#accounts tr.account td{
+	padding: 10px 0;
+	border-bottom: 1px dashed #CCC;
+}
+#accounts tr:last-child td{
+	border-bottom: 0;
+}
+#accounts th{
+	padding: 10px 0;
+}
+#accounts .name{
+	width:  40%;
+}
+#accounts .number{
+	width: 20%;
+	text-align: center;
+}
+#accounts .unpaid{
+	width: 10%;
+	text-align: center;
+}
+#accounts td.number{
+	color: #999;
+}
+#accounts .auto-pay{
+	width: 10%;
+	text-align: center;
+}
+#accounts .options{
+	width: 20%;
+	text-align: center;
+}
+.bill button, .account button{
+	font-size: 11px;
+}
+.account:hover, .bill:hover{
+	background: #EEF;
+}
+
+#add-account, #add-bill{
+	display: none;
+}
+#footer{
+	padding: 10px 0;
+	margin: 0 auto;
+	font-weight: bold;
+	text-shadow: 0px 1px #FFF;
+	width: 1000px;
+}
